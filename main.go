@@ -11,8 +11,8 @@ import (
 func main() {
 	appConfig := config.Load()
 
-	http.Handle("/js/", http.StripPrefix("/js/", http.FileServer(http.Dir("/public/js"))))
-	http.Handle("/css/", http.StripPrefix("/css/", http.FileServer(http.Dir("/public/css"))))
+	http.Handle("/js/", http.StripPrefix("/js/", http.FileServer(http.Dir("./public/js"))))
+	http.Handle("/css/", http.StripPrefix("/css/", http.FileServer(http.Dir("./public/css"))))
 
 	http.HandleFunc("/", func(response http.ResponseWriter, request *http.Request) {
 		log.Printf("Handling incoming request: [IP]%v [Path]%v", request.RemoteAddr, request.URL.Path)
