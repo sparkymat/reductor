@@ -21,8 +21,8 @@ func main() {
 		for _, cssInclude := range appConfig.Head.CssIncludes {
 			r.AddCustomCssLink(cssInclude)
 		}
-		r.MapCssFolder("public/css", "css")
-		r.MapJavascriptFolder("public/js", "js")
+		r.MapCssFolder("public/css", "/css")
+		r.MapJavascriptFolder("public/js", "/js")
 
 		response.Write([]byte(r.Html().String()))
 	})
