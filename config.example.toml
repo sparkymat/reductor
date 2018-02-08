@@ -1,4 +1,5 @@
-app_name = "HelloWorld"
+page_title = "HelloWorld"
+port = 8080
 
 [head]
 css_includes = [

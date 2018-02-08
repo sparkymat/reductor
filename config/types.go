@@ -9,7 +9,8 @@ type BodyConfig struct {
 }
 
 type Type struct {
-	AppName string `toml:"app_name"`
-	Head    HeadConfig
-	Body    BodyConfig
+	PageTitle string `toml:"page_title"`
+	Port      int
+	Head      HeadConfig
+	Body      BodyConfig
 }
