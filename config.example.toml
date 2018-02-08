@@ -1,11 +1,7 @@
 app_name = "HelloWorld"
 
 [head]
-javascript_includes = [
-  "/js/index.js",
-]
 css_includes = [
-  "/css/index.css",
   "https://fonts.googleapis.com/css?family=Robot"
 ]
 

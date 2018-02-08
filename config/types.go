@@ -1,8 +1,7 @@
 package config
 
 type HeadConfig struct {
-	JavascriptIncludes []string `toml:"javascript_includes"`
-	CssIncludes        []string `toml:"css_includes"`
+	CssIncludes []string `toml:"css_includes"`
 }
 
 type BodyConfig struct {
