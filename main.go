@@ -17,7 +17,7 @@ func main() {
 	http.HandleFunc("/", func(response http.ResponseWriter, request *http.Request) {
 		log.Printf("Handling incoming request: [IP]%v [Path]%v", request.RemoteAddr, request.URL.Path)
 
-		r := reactor.New(appConfig.AppName)
+		r := reactor.New(appConfig.AppName, appConfig.Body.AppId)
 		for _, cssInclude := range appConfig.Head.CssIncludes {
 			r.AddCustomCssLink(cssInclude)
 		}
